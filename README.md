@@ -24,7 +24,7 @@ anime-quiz-app/
 │
 ├── index.html        
 ├── style.css         
-└── script.js        
+└── script.js.        
 
 
 

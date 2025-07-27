@@ -122,4 +122,5 @@ function LoadQuestion (){
 
 submit.addEventListener('click', LoadQuestion);
 
+
 loadQuiz();

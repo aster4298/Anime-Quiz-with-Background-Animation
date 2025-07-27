@@ -29,7 +29,7 @@ body{
     border: 3px dotted orange;
     padding: 8px;
     transition: 1s all ease;
-      z-index: 100;
+    z-index: 100;
 
   }  
 
