@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: linear-gradient(120deg, #000000, #ff0073);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+
+  .quiz-containers{
+    position: relative;
+    max-width: 95%;
+    width: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 3px dotted orange;
+    padding: 8px;
+    transition: 1s all ease;
+      z-index: 100;
+
+  }  
+
+  .quiz-containers:hover{
+    transform: rotate(360deg);
+  }
+
+.header{
+    position: relative;
+    background-color: #eef2f7;
+    padding: 2rem;
+}
+
+span{
+    position:absolute;
+text-align: center;
+background-color: #ff0073;
+width:100% ;
+height: 30px;
+font-size: 22px;
+color: white;
+text-decoration: underline;
+font-weight: 600;
+margin-left: -10px;
+margin-top: -30px;
+}
+h1{
+    margin-bottom: 100px;
+    font-style: italic;
+    text-decoration: underline;
+    z-index: 100;
+    position: relative;
+
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    z-index: 100;
+}
+label{
+    display: block;
+    padding: 12px;
+    margin: 0.5rem 2rem;
+    border: 2px dotted #ff0073;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label:hover{
+    background-color: white;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #3498db;
+    color: white;
+}
+#submit{
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    border: none;
+    padding: 1.3rem;
+    font-weight: bold;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+
+
+}
+
+#submit:hover{
+
+    background-color: #34495e;
+
+}
+#submit:focus{
+
+    background-color: #1a252f;
+}
+
+#submit:hover{
+    transform: scale(1.1);
+border-radius: 20px;
+
+    background-color: #00bc26;
+}
+
+#restart{
+    width: 100%;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    border: 3px solid rgb(121, 5, 147);
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: 0.3s all ease;
+}
+
+#restart:hover{
+color :black;
+transform: translateY(-10px);
+background-color: #f6ec24;
+}
+
+#result{
+    border: 3px dotted salmon;
+    padding: 60px;
+    border-radius: 20px;
+}
+
+p{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ff0073;
+    margin-top: 40px;
+}
+
+.water-bubbles{
+    height: 200%;
+    width: 200%;
+    position: absolute;
+    z-index: 1;
+
+    background-image: radial-gradient(circle, rgba(255,255,255,0.2) 5px, transparent 5px ),
+    radial-gradient(circle, rgb(250, 74, 182) 10px , transparent 10px);
+
+    background-size: 40px 40px, 80px 80px;
+    background-position: 0 0 , 20px 20px;
+    animation: animateBuble 20s linear infinite;
+
+}
+
+@keyframes animateBuble {
+    0%{
+        transform: rotate(0deg);
+        background-position: 0 100%, 25px 100%;
+    }
+    100%{
+        transform: rotate(360deg);
+        background-position: 0 0%, 25px 0%;
+    }
+}
+
